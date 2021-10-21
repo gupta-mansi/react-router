@@ -20,19 +20,19 @@ class App extends Component{
            <div className="App">
              <ul className="App-header">
                <li>
-                 <Link to="/">Login</Link>
+                 <Link to="/">Home</Link>
                </li>
                <li>
-                 <Link to="/get">Get</Link>
+                 <Link to="/get">About</Link>
                </li>
                <li>
-                 <Link to="/post">Post</Link>
+                 <Link to="/post">Contact</Link>
                </li>
              </ul>
              <Switch>
-               <Route exact path='/' component={Login}></Route>
-               <Route exact path='/get' component={Get}></Route>
-               <Route exact path='/post' component={Post}></Route>
+               <Route exact path='/' component={Home}></Route>
+               <Route exact path='/about' component={About}></Route>
+               <Route exact path='/contact' component={Contact}></Route>
              </Switch>
            </div>
        </Router>
